@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- Définit le document comme étant un document HTML5. -->
+<html lang="fr"> <!-- Définit la langue principale du site en français. -->
+<head> <!-- Contient les informations techniques de la page. -->
+    <meta charset="UTF-8"> <!-- Permet d'utiliser les caractères accentués et spéciaux. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rend le site adapté aux écrans mobiles. -->
+    <meta name="description" content="Réviser, comprendre et maîtriser les réseaux informatiques."> <!-- Décrit le contenu du site pour les moteurs de recherche. -->
+    <title>Nom du site - Accueil</title> <!-- Définit le titre affiché dans l'onglet du navigateur. -->
+    <link rel="stylesheet" href="style.css"> <!-- Charge la feuille de style CSS commune à toutes les pages. -->
+</head> <!-- Ferme la section head. -->
+<body> <!-- Contient tout le contenu visible de la page. -->
+
+    <header class="navbar"> <!-- Crée la barre de navigation fixe du site. -->
+        <a href="index.html" class="logo">Nom du site</a> <!-- Affiche le logo et permet de revenir à l'accueil. -->
+        <nav class="nav-links" aria-label="Navigation principale"> <!-- Contient les liens principaux du site. -->
+            <a href="index.html" class="nav-link active">ACCUEIL</a> <!-- Crée le lien vers la page d'accueil et le rend actif. -->
+            <a href="cours.html" class="nav-link">COURS</a> <!-- Crée le lien vers la page des cours. -->
+            <a href="quiz.html" class="nav-link">QUIZ</a> <!-- Crée le lien vers la page des quiz. -->
+            <a href="outils.html" class="nav-link">OUTILS</a> <!-- Crée le lien vers la page des outils. -->
+            <a href="labs.html" class="nav-link">LABS</a> <!-- Crée le lien vers la page des labs. -->
+            <a href="#" class="login-button">LOGIN</a> <!-- Crée le bouton de connexion. -->
+        </nav> <!-- Ferme la navigation principale. -->
+    </header> <!-- Ferme la barre de navigation. -->
+
+    <main> <!-- Contient le contenu principal de la page. -->
+
+        <section class="hero"> <!-- Crée la section principale de présentation. -->
+            <h1 id="typing-title"></h1> <!-- Contient le titre qui sera écrit automatiquement par JavaScript. -->
+            <p class="hero-subtitle">Des cours simples, des quiz interactifs et des outils pratiques pour vous aider à progresser en réseau informatique.</p> <!-- Affiche le sous-titre de présentation. -->
+        </section> <!-- Ferme la section hero. -->
+
+        <section class="cards-section"> <!-- Crée la section contenant les quatre cartes. -->
+            <div class="cards-container"> <!-- Regroupe les quatre cartes dans un conteneur. -->
+
+                <a href="cours.html" class="feature-card"> <!-- Rend la carte Cours entièrement cliquable. -->
+                    <h2>COURS</h2> <!-- Affiche le titre de la carte Cours. -->
+                    <p>Apprenez les fondamentaux des réseaux informatiques avec des cours simples et progressifs.</p> <!-- Décrit brièvement la page Cours. -->
+                </a> <!-- Ferme la carte Cours. -->
+
+                <a href="quiz.html" class="feature-card"> <!-- Rend la carte Quiz entièrement cliquable. -->
+                    <h2>QUIZ</h2> <!-- Affiche le titre de la carte Quiz. -->
+                    <p>Testez vos connaissances grâce à des quiz interactifs et développez vos compétences.</p> <!-- Décrit brièvement la page Quiz. -->
+                </a> <!-- Ferme la carte Quiz. -->
+
+                <a href="outils.html" class="feature-card"> <!-- Rend la carte Outils entièrement cliquable. -->
+                    <h2>OUTILS</h2> <!-- Affiche le titre de la carte Outils. -->
+                    <p>Découvrez des outils pratiques pour analyser, comprendre et travailler sur les réseaux.</p> <!-- Décrit brièvement la page Outils. -->
+                </a> <!-- Ferme la carte Outils. -->
+
+                <a href="labs.html" class="feature-card"> <!-- Rend la carte Labs entièrement cliquable. -->
+                    <h2>LABS</h2> <!-- Affiche le titre de la carte Labs. -->
+                    <p>Mettez vos connaissances en pratique avec des exercices et des expériences réseau.</p> <!-- Décrit brièvement la page Labs. -->
+                </a> <!-- Ferme la carte Labs. -->
+
+            </div> <!-- Ferme le conteneur des cartes. -->
+        </section> <!-- Ferme la section des cartes. -->
+
+    </main> <!-- Ferme le contenu principal. -->
+
+    <footer class="footer"> <!-- Crée le pied de page du site. -->
+        <a href="portfolio.html" class="portfolio-link">Découvrez mes autres projets ici</a> <!-- Crée le lien vers le portfolio. -->
+        <p>&copy; 2026 - Nom du site édité par Joy - Tous droits réservés.</p> <!-- Affiche le copyright du site. -->
+
+        <div class="social-links"> <!-- Regroupe les trois liens vers les réseaux sociaux. -->
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a> <!-- Crée le lien vers LinkedIn dans un nouvel onglet. -->
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a> <!-- Crée le lien vers GitHub dans un nouvel onglet. -->
+            <a href="mailto:votre-adresse@gmail.com" aria-label="Gmail">@</a> <!-- Crée un lien permettant d'ouvrir la messagerie Gmail. -->
+        </div> <!-- Ferme le groupe des liens sociaux. -->
+    </footer> <!-- Ferme le pied de page. -->
+
+    <script src="script.js"></script> <!-- Charge le fichier JavaScript du site. -->
+</body> <!-- Ferme le corps de la page. -->
+</html> <!-- Ferme le document HTML. -->
