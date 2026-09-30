@@ -1,0 +1,272 @@
+* { /* Sélectionne tous les éléments de la page. */
+    margin: 0; /* Supprime les marges par défaut des éléments. */
+    padding: 0; /* Supprime les espacements internes par défaut. */
+    box-sizing: border-box; /* Inclut les bordures et espacements dans les dimensions des éléments. */
+} /* Ferme la règle universelle. */
+
+html { /* Sélectionne l'élément racine du document. */
+    scroll-behavior: smooth; /* Rend les déplacements vers les différentes sections plus fluides. */
+} /* Ferme la règle html. */
+
+body { /* Définit les propriétés générales du corps du site. */
+    font-family: Arial, Helvetica, sans-serif; /* Définit une police moderne et lisible. */
+    background-color: #FFFFFF; /* Définit le fond principal en blanc. */
+    color: #000000; /* Définit la couleur générale du texte en noir. */
+    min-height: 100vh; /* Permet au contenu de prendre au minimum toute la hauteur de l'écran. */
+} /* Ferme la règle body. */
+
+.navbar { /* Définit la barre de navigation. */
+    position: fixed; /* Maintient la barre visible même lorsque l'utilisateur fait défiler la page. */
+    top: 0; /* Place la barre tout en haut de la fenêtre. */
+    left: 0; /* Aligne la barre sur le bord gauche. */
+    width: 100%; /* Donne à la barre toute la largeur de l'écran. */
+    height: 75px; /* Définit la hauteur de la barre de navigation. */
+    background-color: #01142D; /* Définit le fond bleu très foncé demandé. */
+    display: flex; /* Utilise Flexbox pour organiser le logo et les liens. */
+    align-items: center; /* Centre verticalement les éléments de la barre. */
+    justify-content: space-between; /* Place le logo à gauche et les liens à droite. */
+    padding: 0 50px; /* Ajoute un espace horizontal à l'intérieur de la barre. */
+    z-index: 1000; /* Place la navigation au-dessus des autres éléments. */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Ajoute une légère ombre sous la navigation. */
+} /* Ferme la règle navbar. */
+
+.logo { /* Définit l'apparence du nom du site. */
+    color: #FFFFFF; /* Rend le logo blanc. */
+    text-decoration: none; /* Supprime le soulignement du lien. */
+    font-size: 24px; /* Définit la taille du logo. */
+    font-weight: 700; /* Rend le logo épais. */
+    letter-spacing: 1px; /* Ajoute légèrement de l'espace entre les lettres. */
+} /* Ferme la règle logo. */
+
+.nav-links { /* Définit le conteneur des liens de navigation. */
+    display: flex; /* Aligne les liens horizontalement. */
+    align-items: center; /* Centre les liens verticalement. */
+    gap: 30px; /* Ajoute un espace entre les différents liens. */
+} /* Ferme la règle nav-links. */
+
+.nav-link { /* Définit les liens classiques de navigation. */
+    color: #FFFFFF; /* Définit les liens en blanc. */
+    text-decoration: none; /* Supprime le soulignement des liens. */
+    font-size: 15px; /* Définit la taille du texte des liens. */
+    font-weight: 600; /* Rend les liens légèrement épais. */
+    transition: color 0.25s ease; /* Anime progressivement le changement de couleur. */
+} /* Ferme la règle nav-link. */
+
+.nav-link:hover { /* Définit l'apparence d'un lien lorsque la souris passe dessus. */
+    color: #017DFD; /* Colore le lien en bleu lorsqu'il est survolé. */
+} /* Ferme la règle nav-link:hover. */
+
+.nav-link.active { /* Définit l'apparence de la page actuellement sélectionnée. */
+    color: #017DFD; /* Colore le lien actif en bleu. */
+} /* Ferme la règle nav-link.active. */
+
+.login-button { /* Définit le bouton Login. */
+    background-color: #017DFD; /* Donne au bouton la couleur bleue demandée. */
+    color: #FFFFFF; /* Rend le texte du bouton blanc. */
+    text-decoration: none; /* Supprime le soulignement du lien. */
+    padding: 11px 22px; /* Ajoute de l'espace autour du texte du bouton. */
+    border-radius: 6px; /* Arrondit légèrement les coins du bouton. */
+    font-size: 14px; /* Définit la taille du texte du bouton. */
+    font-weight: 700; /* Rend le texte du bouton épais. */
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Anime les changements du bouton. */
+} /* Ferme la règle login-button. */
+
+.login-button:hover { /* Définit l'apparence du bouton Login au survol. */
+    background-color: #0069D9; /* Assombrit légèrement le bouton au survol. */
+    transform: translateY(-2px); /* Déplace légèrement le bouton vers le haut au survol. */
+} /* Ferme la règle login-button:hover. */
+
+main { /* Définit le contenu principal de la page. */
+    padding-top: 75px; /* Empêche le contenu de passer derrière la barre de navigation fixe. */
+} /* Ferme la règle main. */
+
+.hero { /* Définit la section principale d'accueil. */
+    min-height: 55vh; /* Donne une hauteur minimale importante à la section. */
+    display: flex; /* Utilise Flexbox pour positionner le contenu. */
+    flex-direction: column; /* Place le titre et le sous-titre verticalement. */
+    justify-content: center; /* Centre le contenu verticalement. */
+    align-items: center; /* Centre le contenu horizontalement. */
+    text-align: center; /* Centre le texte. */
+    padding: 80px 25px 50px; /* Ajoute des espaces autour du contenu. */
+} /* Ferme la règle hero. */
+
+.hero h1 { /* Définit le titre principal. */
+    color: #000000; /* Définit le titre en noir. */
+    font-size: clamp(32px, 5vw, 64px); /* Rend la taille du titre responsive selon la taille de l'écran. */
+    font-weight: 800; /* Rend le titre très visible. */
+    line-height: 1.15; /* Définit l'espace vertical entre les lignes du titre. */
+    min-height: 75px; /* Réserve une hauteur pendant l'animation de frappe. */
+} /* Ferme la règle hero h1. */
+
+.hero-subtitle { /* Définit le sous-titre de la page d'accueil. */
+    max-width: 800px; /* Limite la largeur du paragraphe. */
+    margin-top: 25px; /* Ajoute un espace entre le titre et le sous-titre. */
+    color: #FFFFFF; /* Utilise exactement la couleur demandée pour le sous-titre. */
+    font-size: 18px; /* Définit la taille du sous-titre. */
+    line-height: 1.7; /* Améliore la lisibilité du texte. */
+} /* Ferme la règle hero-subtitle. */
+
+.cards-section { /* Définit la section des cartes. */
+    padding: 40px 50px 100px; /* Ajoute de l'espace autour des cartes. */
+} /* Ferme la règle cards-section. */
+
+.cards-container { /* Définit le conteneur des cartes. */
+    max-width: 1200px; /* Limite la largeur maximale des cartes. */
+    margin: 0 auto; /* Centre le conteneur horizontalement. */
+    display: grid; /* Utilise CSS Grid pour organiser les cartes. */
+    grid-template-columns: repeat(4, 1fr); /* Crée quatre colonnes de largeur identique. */
+    gap: 25px; /* Ajoute un espace entre les cartes. */
+} /* Ferme la règle cards-container. */
+
+.feature-card { /* Définit l'apparence de chaque carte. */
+    background-color: rgba(255, 0, 161, 0.5); /* Utilise le rose #FF00A1 avec une transparence de 50 %. */
+    color: #000000; /* Définit la couleur du texte des cartes. */
+    text-decoration: none; /* Supprime le soulignement des cartes cliquables. */
+    padding: 35px 25px; /* Ajoute de l'espace intérieur aux cartes. */
+    min-height: 220px; /* Définit une hauteur minimale pour les cartes. */
+    border-radius: 14px; /* Arrondit les coins des cartes. */
+    display: flex; /* Utilise Flexbox pour organiser le contenu des cartes. */
+    flex-direction: column; /* Place le titre au-dessus du texte. */
+    justify-content: center; /* Centre verticalement le contenu. */
+    text-align: center; /* Centre le contenu textuel. */
+    transition: transform 0.25s ease, box-shadow 0.25s ease; /* Anime le déplacement et l'ombre au survol. */
+} /* Ferme la règle feature-card. */
+
+.feature-card:hover { /* Définit l'effet au survol d'une carte. */
+    transform: translateY(-8px); /* Fait remonter la carte légèrement. */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Ajoute une ombre lors du survol. */
+} /* Ferme la règle feature-card:hover. */
+
+.feature-card h2 { /* Définit les titres des cartes. */
+    margin-bottom: 15px; /* Ajoute un espace sous le titre. */
+    font-size: 23px; /* Définit la taille du titre de la carte. */
+} /* Ferme la règle feature-card h2. */
+
+.feature-card p { /* Définit les paragraphes des cartes. */
+    font-size: 15px; /* Définit la taille du texte des cartes. */
+    line-height: 1.6; /* Améliore la lisibilité des descriptions. */
+} /* Ferme la règle feature-card p. */
+
+.footer { /* Définit le pied de page. */
+    background-color: #01142D; /* Utilise le même bleu foncé que la navigation. */
+    color: #FFFFFF; /* Définit le texte du footer en blanc. */
+    min-height: 230px; /* Définit une hauteur minimale au footer. */
+    display: flex; /* Utilise Flexbox pour organiser les éléments. */
+    flex-direction: column; /* Place les éléments verticalement. */
+    align-items: center; /* Centre les éléments horizontalement. */
+    justify-content: center; /* Centre les éléments verticalement. */
+    text-align: center; /* Centre les textes. */
+    padding: 45px 20px; /* Ajoute de l'espace autour du contenu. */
+} /* Ferme la règle footer. */
+
+.portfolio-link { /* Définit le lien vers le portfolio. */
+    color: #017DFD; /* Définit le lien en bleu. */
+    text-decoration: none; /* Supprime le soulignement par défaut. */
+    font-size: 19px; /* Définit la taille du texte du lien. */
+    font-weight: 700; /* Rend le lien plus visible. */
+    margin-bottom: 20px; /* Ajoute un espace sous le lien. */
+} /* Ferme la règle portfolio-link. */
+
+.portfolio-link:hover { /* Définit l'apparence du portfolio au survol. */
+    text-decoration: underline; /* Ajoute un soulignement au survol. */
+} /* Ferme la règle portfolio-link:hover. */
+
+.footer p { /* Définit le paragraphe du footer. */
+    color: #FFFFFF; /* Définit le texte du copyright en blanc. */
+    font-size: 14px; /* Définit la taille du copyright. */
+} /* Ferme la règle footer p. */
+
+.social-links { /* Définit le conteneur des logos sociaux. */
+    display: flex; /* Aligne les trois logos horizontalement. */
+    gap: 18px; /* Ajoute un espace entre les logos. */
+    margin-top: 25px; /* Ajoute un espace au-dessus des logos. */
+} /* Ferme la règle social-links. */
+
+.social-links a { /* Définit l'apparence des logos sociaux. */
+    width: 45px; /* Définit la largeur de chaque logo. */
+    height: 45px; /* Définit la hauteur de chaque logo. */
+    border: 2px solid #FF00A1; /* Ajoute une bordure rose autour de chaque logo. */
+    border-radius: 50%; /* Transforme chaque élément en cercle. */
+    display: flex; /* Utilise Flexbox pour centrer le contenu. */
+    align-items: center; /* Centre le contenu verticalement. */
+    justify-content: center; /* Centre le contenu horizontalement. */
+    color: #FF00A1; /* Définit la couleur du logo en rose. */
+    text-decoration: none; /* Supprime le soulignement des liens. */
+    font-weight: 800; /* Rend les symboles plus visibles. */
+    transition: all 0.2s ease; /* Anime les changements au survol. */
+} /* Ferme la règle social-links a. */
+
+.social-links a:hover { /* Définit l'effet au survol des logos. */
+    background-color: #FF00A1; /* Remplit le cercle en rose. */
+    color: #01142D; /* Change la couleur du symbole. */
+    transform: translateY(-3px); /* Déplace légèrement le logo vers le haut. */
+} /* Ferme la règle social-links a:hover. */
+
+.page-content { /* Définit les pages internes du site. */
+    min-height: calc(100vh - 305px); /* Permet au footer de rester vers le bas de la page. */
+    padding: 140px 30px 100px; /* Ajoute de l'espace sous la navigation et autour du contenu. */
+    text-align: center; /* Centre le contenu des pages internes. */
+} /* Ferme la règle page-content. */
+
+.page-content h1 { /* Définit les titres des pages internes. */
+    font-size: clamp(36px, 5vw, 60px); /* Rend le titre responsive. */
+    color: #000000; /* Définit le titre en noir. */
+    margin-bottom: 25px; /* Ajoute un espace sous le titre. */
+} /* Ferme la règle page-content h1. */
+
+.page-content p { /* Définit les paragraphes des pages internes. */
+    max-width: 800px; /* Limite la largeur du texte. */
+    margin: 0 auto; /* Centre le paragraphe. */
+    font-size: 18px; /* Définit la taille du paragraphe. */
+    line-height: 1.7; /* Améliore la lisibilité. */
+} /* Ferme la règle page-content p. */
+
+@media (max-width: 900px) { /* Commence les règles adaptées aux écrans moyens. */
+    .navbar { /* Modifie la barre de navigation sur les écrans moyens. */
+        padding: 0 25px; /* Réduit les marges horizontales. */
+    } /* Ferme la règle navbar responsive. */
+
+    .nav-links { /* Modifie le groupe des liens sur les écrans moyens. */
+        gap: 15px; /* Réduit l'espace entre les liens. */
+    } /* Ferme la règle nav-links responsive. */
+
+    .nav-link { /* Modifie les liens sur les écrans moyens. */
+        font-size: 13px; /* Réduit légèrement la taille des liens. */
+    } /* Ferme la règle nav-link responsive. */
+
+    .cards-container { /* Modifie la grille des cartes sur les écrans moyens. */
+        grid-template-columns: repeat(2, 1fr); /* Passe de quatre à deux colonnes. */
+    } /* Ferme la règle cards-container responsive. */
+} /* Ferme la media query des écrans moyens. */
+
+@media (max-width: 650px) { /* Commence les règles adaptées aux petits écrans. */
+    .navbar { /* Modifie la navigation sur mobile. */
+        height: auto; /* Permet à la navigation de s'adapter au contenu. */
+        min-height: 75px; /* Maintient une hauteur minimale. */
+        flex-direction: column; /* Place le logo et les liens sur plusieurs lignes. */
+        justify-content: center; /* Centre les éléments verticalement. */
+        gap: 15px; /* Ajoute un espace entre le logo et les liens. */
+        padding: 15px; /* Ajoute un espace intérieur. */
+    } /* Ferme la règle navbar mobile. */
+
+    .nav-links { /* Modifie les liens de navigation sur mobile. */
+        flex-wrap: wrap; /* Permet aux liens de passer à la ligne. */
+        justify-content: center; /* Centre les liens. */
+    } /* Ferme la règle nav-links mobile. */
+
+    main { /* Modifie le contenu principal sur mobile. */
+        padding-top: 125px; /* Réserve davantage d'espace pour la navigation sur plusieurs lignes. */
+    } /* Ferme la règle main mobile. */
+
+    .cards-section { /* Modifie la section des cartes sur mobile. */
+        padding: 30px 20px 70px; /* Réduit les espaces autour des cartes. */
+    } /* Ferme la règle cards-section mobile. */
+
+    .cards-container { /* Modifie la grille sur mobile. */
+        grid-template-columns: 1fr; /* Affiche une seule carte par ligne. */
+    } /* Ferme la règle cards-container mobile. */
+
+    .feature-card { /* Modifie les cartes sur mobile. */
+        min-height: 190px; /* Réduit la hauteur minimale des cartes. */
+    } /* Ferme la règle feature-card mobile. */
+} /* Ferme la media query mobile. */
